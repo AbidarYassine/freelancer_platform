@@ -1,4 +1,4 @@
-package freelance.platform.api.bean;
+package freelance.platform.api.bean.proposal_contrat;
 
 import java.io.Serializable;
 
@@ -12,13 +12,12 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "payementTypes") 
-public class PaymentType implements Serializable {
+@Table(name = "proposals")
+public class Proposal implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy= GenerationType.AUTO )
     private Long id;
-
 }
