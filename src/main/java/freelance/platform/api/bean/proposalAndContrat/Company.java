@@ -1,0 +1,14 @@
+package freelance.platform.api.bean.proposalAndContrat;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.io.Serializable;
+
+public class Company implements Serializable {
+
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+}
